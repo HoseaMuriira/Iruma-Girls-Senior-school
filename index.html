@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>IRUMA GIRLS SENIOR SCHOOL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <style>
+      /* Inline overrides to ensure maroon/white theme even if external CSS fails */
+      :root{--primary:#800000;--accent:#fff;--muted:#faf5f5;--text:#111}
+      header{background:var(--primary);color:var(--accent);padding:18px;text-align:center}
+      .login-compact{max-width:360px;margin:12px auto;padding:12px;border-radius:8px;background:var(--accent);color:var(--text);box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+      .login-compact input,.login-compact select{width:100%;padding:8px;margin:8px 0;border-radius:6px;border:1px solid #ddd}
+      .login-compact button{background:var(--primary);color:var(--accent);border:none;padding:10px;border-radius:6px;width:100%}
+      .slideshow-container{max-height:420px;overflow:hidden;border-radius:8px;background:linear-gradient(180deg,#6b0000,#330000)}
+      .slide img{width:100%;height:420px;object-fit:cover;display:block}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="topbar container">
+        <div class="logo">
+          <h1>IRUMA GIRLS SENIOR SCHOOL</h1>
+          <div>Tharaka Nithi County — CBE Triple Pathways: STEM • Humanities • Arts &amp; Sports</div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="pathways.html">Pathways</a></li>
+            <li><a href="student-portal.html">Student Portal</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+
+      <div class="slideshow-container">
+        <div class="slide"><img src="images/slide1.svg" alt="Campus"><div class="caption">Welcome to Iruma Girls</div></div>
+        <div class="slide"><img src="images/slide2.svg" alt="Students"><div class="caption">Student Life & Activities</div></div>
+        <div class="slide"><img src="images/slide3.svg" alt="Classroom"><div class="caption">Labs & Practical Learning</div></div>
+        <div class="slideshow-controls">
+          <button class="prev" aria-label="Previous">❮</button>
+          <button class="next" aria-label="Next">❯</button>
+        </div>
+      </div>
+
+      <!-- Compact login form for quick access -->
+      <section class="login-compact">
+        <h3 style="margin-top:0">Quick Login</h3>
+        <form method="POST" action="/api/auth/login">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <select name="role" aria-label="role">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="admin">Admin</option>
+          </select>
+          <button type="submit">Login</button>
+        </form>
+        <p style="font-size:13px;margin:8px 0;text-align:center">Or <a href="register.html">Create an account</a> · <a href="student-portal.html">Student Portal</a></p>
+      </section>
+
+      <section class="welcome">
+        <h2>Welcome to IRUMA GIRLS SENIOR SCHOOL</h2>
+        <p>We are a girls' secondary school in Tharaka Nithi County following Kenya's Competency-Based Curriculum (CBE). We offer triple pathways — STEM, Humanities, Arts &amp; Sports — to nurture holistic skills, leadership and lifelong learning.</p>
+      </section>
+
+      <section class="card">
+        <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap">
+          <div style="flex:1;min-width:260px;display:flex;gap:12px;align-items:flex-start">
+            <img src="images/principal.jpg" alt="Principal" style="width:120px;height:120px;object-fit:cover;border-radius:8px">
+            <div>
+              <h3>Chief Principal's Message</h3>
+              <p>Welcome to Iruma Girls Senior School. Our commitment is to deliver a balanced education that nurtures academic excellence, character and practical skills. We champion the Competency-Based Curriculum and encourage every student to discover and develop their unique talents.</p>
+              <p><strong>Mrs.Mary Mugo</strong><br>Principal</p>
+            </div>
+          </div>
+
+          <div style="flex:1;min-width:260px;display:flex;gap:12px;align-items:flex-start">
+            <img src="images/deputy.jpg" alt="Deputy Principal" style="width:120px;height:120px;object-fit:cover;border-radius:8px">
+            <div>
+              <h3>Deputy Principal (Academic)</h3>
+              <p>Our academic program focuses on active, inquiry-based learning and real-life competencies. We support learners with guidance, enrichment and remedial help so every pupil can thrive.</p>
+              <p><strong>Mr. P. M. Mwangi</strong><br>Deputy Principal</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid">
+          <div class="card">
+            <h3>Mission & Vision</h3>
+            <p>To nurture competent, confident and compassionate young women through a skills-based curriculum and a supportive learning environment.</p>
+          </div>
+          <div class="card">
+            <h3>Admissions</h3>
+            <p>Open enrollment for Junior and Senior levels under CBC. Apply online or visit the school office in Tharaka Nithi County.</p>
+            <a href="admissions.html">Apply Now →</a>
+          </div>
+          <div class="card">
+            <h3>Student Portal</h3>
+            <p>Secure student and staff portals for results, timetables, assignments and learning materials.</p>
+            <a href="student-portal.html">Portal →</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Latest News & Events</h3>
+        <ul>
+          <li>Science fair winners announced — Oct 2025</li>
+          <li>Inter-school athletics day — Nov 2025</li>
+          <li>Term 1 assessments begin — Jan 2026</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div class="footer-info">
+          <p>© 2025 IRUMA GIRLS SENIOR SCHOOL — Tharaka Nithi County</p>
+          <p>Office: Tharaka Nithi County, Kenya · Phone: <a href="tel:+254758380363">+254758380363</a> · Email: <a href="mailto:irmgirls@gmail.com">irmgirls@gmail.com</a></p>
+        </div>
+        <div class="footer-map" data-lat="-0.3340" data-lng="37.6390" data-locked="true">
+          <div class="map-instance" aria-hidden="false" style="height:220px"></div>
+          <div class="map-controls">
+            <button class="map-unlock" title="Unlock map to pan & zoom">Unlock</button>
+            <button class="map-locate" title="Use device GPS to show my location">Use my location</button>
+          </div>
+        </div>
+      </div>olo
+    </footer>
+
+    <button id="themeToggle" class="theme-toggle">Toggle Theme</button>
+    <script src="js/main.js"></script>
+  </body>
+</html>

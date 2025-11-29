@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Register - IRUMA GIRLS SENIOR SCHOOL</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header><div class="topbar container"><div class="logo"><h1>Create Account</h1></div><nav><a href="index.html">Home</a></nav></div></header>
+    <main class="container">
+      <section class="card">
+        <h2>Register an account</h2>
+        <p>Create a student or staff account to access the portal. Use a valid email and choose a secure password (8+ characters, mix letters and numbers).</p>
+        <form action="/api/auth/register" method="POST">
+          <input type="text" name="fullname" placeholder="Full name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <select name="role" required>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="admin">Admin</option>
+          </select>
+          <button type="submit">Create account</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-grid">
+        <div class="footer-info">
+          <p>© 2025 IRUMA GIRLS SENIOR SCHOOL</p>
+          <p>Registration — Tharaka Nithi County · <a href="mailto:irmgirls@gmail.com">irmgirls@gmail.com</a></p>
+        </div>
+        <div class="footer-map" data-lat="-0.3340" data-lng="37.6390" data-locked="true">
+          <div class="map-instance" style="height:220px"></div>
+          <div class="map-controls">
+            <button class="map-unlock" title="Unlock map to pan & zoom">Unlock</button>
+            <button class="map-locate" title="Use device GPS to show my location">Use my location</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

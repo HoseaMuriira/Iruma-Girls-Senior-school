@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Student Portal - IRUMA GIRLS SENIOR SCHOOL</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header><div class="topbar container"><div class="logo"><h1>Student Portal</h1></div><nav><a href="index.html">Home</a></nav></div></header>
+    <main class="container">
+      <section class="card">
+        <h2>Portal Features</h2>
+        <ul>
+          <li>Secure login for students to view results and timetables</li>
+          <li>Downloadable learning materials and assignments</li>
+          <li>Submit assignments and receive teacher feedback</li>
+          <li>View fees statement and payment history</li>
+          <li>Message teachers and receive announcements</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Login</h3>
+        <form action="/api/auth/login" method="POST">
+          <input type="email" name="email" placeholder="School email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        <p style="font-size:13px">Need help? Contact the school ICT office at <a href="mailto:irmgirls@gmail.com">irmgirls@gmail.com</a></p>
+      </section>
+
+      <!-- Profile panel (populated from /api/profile when logged in) -->
+      <section id="myProfile" class="card profile-panel" style="display:none">
+        <h3>My Profile</h3>
+        <div class="profile-inner">
+          <p><strong>Name:</strong> <span class="profile-name">—</span></p>
+          <p><strong>Admission No:</strong> <span class="profile-admission">—</span></p>
+          <p><strong>Year:</strong> <span class="profile-year">—</span></p>
+          <p><strong>Pathway:</strong> <span class="profile-pathway">—</span></p>
+          <p><strong>Email:</strong> <span class="profile-email">—</span></p>
+          <p><strong>Role:</strong> <span class="profile-role">—</span></p>
+          <div style="margin-top:10px"><a href="/dashboard-student.html">Go to Dashboard</a> · <a href="#" class="profileLogout">Logout</a></div>
+        </div>
+      </section>
+
+      <section id="profileFallback" class="card" style="display:none">
+        <h3>Not logged in</h3>
+        <p>Please <a href="register.html">register</a> or use the login form to access the student portal and view your personal information.</p>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-grid">
+        <div class="footer-info">
+          <p>© 2025 IRUMA GIRLS SENIOR SCHOOL</p>
+          <p>Iruma Girls · Tharaka Nithi County — <a href="mailto:irmgirls@gmail.com">irmgirls@gmail.com</a></p>
+        </div>
+        <div class="footer-map" data-lat="-0.3340" data-lng="37.6390" data-locked="true">
+          <div class="map-instance" style="height:220px"></div>
+          <div class="map-controls">
+            <button class="map-unlock" title="Unlock map to pan & zoom">Unlock</button>
+            <button class="map-locate" title="Use device GPS to show my location">Use my location</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact - IRUMA GIRLS SENIOR SCHOOL</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header><div class="topbar container"><div class="logo"><h1>Contact Us</h1></div><nav><a href="index.html">Home</a></nav></div></header>
+    <main class="container">
+      <section class="card">
+        <h2>Get in touch</h2>
+        <p>Email: <a href="mailto:irmgirls@gmail.com">irmgirls@gmail.com</a><br>
+        Phone: <a href="tel:+254758380363">+254758380363</a><br>
+        Address: Tharaka Nithi County, Kenya</p>
+
+        <h3>Office Hours</h3>
+        <p>Monday — Friday: 8:00AM — 4:00PM<br> Saturday: 9:00AM — 12:00PM</p>
+
+        <h3>Contact Form</h3>
+        <form method="POST" action="/contact-send">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <h3>Location</h3>
+        <p>Find us on the map: </p>
+        <iframe title="Iruma Girls Location" src="https://maps.google.com?q=Tharaka+Nithi+County&output=embed" style="width:100%;height:300px;border:0;border-radius:8px"></iframe>
+      </section>
+    </main>
+    
+      <div class="container footer-grid">
+        <div class="footer-info">
+          <p>© 2025 IRUMA GIRLS SENIOR SCHOOL</p>
+          <p>Contact: Tharaka Nithi County · <a href="mailto:irmgirls@gmail.com">irmgirls@gmail.com</a> · Phone: <a href="tel:+254758380363">+254758380363</a></p>
+        </div>
+        <div class="footer-map" data-lat="-0.3340" data-lng="37.6390" data-locked="true">
+          <div class="map-instance" style="height:220px"></div>
+          <div class="map-controls">
+            <button class="map-unlock" title="Unlock map to pan & zoom">Unlock</button>
+            <button class="map-locate" title="Use device GPS to show my location">Use my location</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+</html>

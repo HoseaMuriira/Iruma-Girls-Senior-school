@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Staff Portal - IRUMA GIRLS SENIOR SCHOOL</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header><div class="topbar container"><div class="logo"><h1>Staff Portal</h1></div><nav><a href="index.html">Home</a></nav></div></header>
+    <main class="container">
+      <section class="card">
+        <h2>Portal Features (Staff)</h2>
+        <ul>
+          <li>Upload assignments and learning resources</li>
+          <li>Enter and manage student assessments and records</li>
+          <li>Communicate with learners and parents</li>
+          <li>Manage class timetables and events</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Staff Login</h3>
+        <form action="/api/auth/login" method="POST">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-grid">
+        <div class="footer-info">
+          <p>© 2025 IRUMA GIRLS SENIOR SCHOOL</p>
+          <p>Staff Portal — Tharaka Nithi County · <a href="mailto:irmgirls@gmail.com">irmgirls@gmail.com</a></p>
+        </div>
+        <div class="footer-map" data-lat="-0.3340" data-lng="37.6390" data-locked="true">
+          <div class="map-instance" style="height:220px"></div>
+          <div class="map-controls">
+            <button class="map-unlock" title="Unlock map to pan & zoom">Unlock</button>
+            <button class="map-locate" title="Use device GPS to show my location">Use my location</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
